@@ -1,0 +1,186 @@
+body {
+  padding-top: 116px;
+}
+
+.head_nav {
+  border-bottom: 1px solid #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .head_nav_block {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 108px;
+    .head_nav_logo_box {
+      grid-row: 1/3;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .head_nav_logo {
+        width: 125px;
+        height: 55px;
+      }
+    }
+    .head_nav_service_box {
+      grid-column: 2/3;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 60px auto;
+      .head_nav_service {
+        display: grid;
+        grid-template-columns: 720px auto;
+        grid-template-rows: auto;
+        .head_nav_search {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .head_nav_search_box {
+            position: relative;
+            width: 623px;
+            .head_nav_search_input {
+              width: 623px;
+              height: 46px;
+              box-sizing: border-box;
+              font-size: 20px;
+              padding: 7.2px 110px 7.2px 20px;
+              border-radius: 23px;
+              border: 1px solid #a3a3a3;
+            }
+            .head_nav_search_btn {
+              position: absolute;
+              right: 0;
+              background-color: #6001d2;
+              color: white;
+              font-size: 20px;
+              width: 73px;
+              height: 46px;
+              border-radius: 23px;
+              cursor: pointer;
+              border: 0;
+            }
+          }
+          .head_nav_search_handwriting_box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-left: 10px;
+            .head_nav_search_handwriting {
+              width: 30px;
+              height: 30px;
+              object-fit: cover;
+            }
+          }
+        }
+        .head_nav_service_window {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 0;
+          .service_window_box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0 10px;
+            .service_window {
+              text-decoration: none;
+              color: #6e6e6e;
+              .weather_img_box {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                position: relative;
+                .weather_img {
+                  width: 27px;
+                  height: 27px;
+                  object-fit: cover;
+                }
+                .temperature {
+                  font-size: 13px;
+                  position: absolute;
+                  top: -7px;
+                  left: 25px;
+                }
+                .county {
+                  font-size: 14px;
+                  padding-left: 15px;
+                }
+              }
+              .login_btn {
+                font-size: 13px;
+                border: 2px solid #6001d2;
+                border-radius: 3px;
+                padding: 5px 25px;
+                color: #6001d2;
+                &:hover {
+                  background-color: #6001d2;
+                  color: white;
+                }
+              }
+              .email_img_box {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .email_img {
+                  width: 30px;
+                  height: 30px;
+                }
+                .email_text {
+                  font-size: 14px;
+                  color: #6001d2;
+                  padding: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .head_nav_hot_search {
+        display: grid;
+        grid-template-columns: 720px auto;
+        grid-template-rows: auto;
+        .head_nav_hot_search_box {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 0;
+          .hot_search_text {
+            font-size: 13px;
+          }
+          .hot_search_link_wrap {
+            .hot_search_link {
+              border-right: 1px solid #b4b4b4;
+              font-size: 13px;
+              text-decoration: none;
+              padding: 0 10px;
+            }
+          }
+        }
+        .hot_search_advertising_box {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-end;
+          .hot_search_advertising {
+            text-decoration: none;
+            font-size: 13px;
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 150px 700px auto;
+  section {
+    
+  }
+}
